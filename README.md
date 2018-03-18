@@ -24,6 +24,8 @@ dist/*
 !dist/index.html
 ```
 
+> Use the [Node.js .gitignore file by GitHub](https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore)
+
 Create `dist/index.html`:
 
 ```html
