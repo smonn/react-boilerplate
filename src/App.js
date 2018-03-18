@@ -1,5 +1,6 @@
 import React from 'react';
 import { css } from 'emotion';
+import { hot } from 'react-hot-loader';
 
 const styles = {
   container: css({
@@ -7,6 +8,6 @@ const styles = {
   }),
 };
 
-export default function App() {
-  return <div className={styles.container}>Hello, World!</div>;
-}
+const App = () => <div className={styles.container}>Hello, Simon!</div>;
+
+export default hot(module)(App);

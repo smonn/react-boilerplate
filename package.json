@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --content-base dist --history-api-fallback --progress",
+    "start": "webpack-dev-server --mode development --hot --content-base dist --history-api-fallback --progress",
     "test": "jest --setupTestFrameworkScriptFile=./testSetup.js",
     "lint": "eslint ./src/ webpack.config.js testSetup.js"
   },
@@ -36,6 +36,7 @@
   "dependencies": {
     "emotion": "^9.0.2",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.0.0"
   }
 }

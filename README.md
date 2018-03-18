@@ -277,3 +277,5 @@ eslint ./src/ webpack.config.js testSetup.js
   "javascript.validate.enable": false
 }
 ```
+
+Enable Hot Module Reloading by following [the instructions for `react-hot-loader`](https://github.com/gaearon/react-hot-loader#getting-started)
