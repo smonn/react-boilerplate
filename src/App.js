@@ -8,6 +8,6 @@ const styles = {
   }),
 };
 
-const App = () => <div className={styles.container}>Hello, Simon!</div>;
+const App = () => <div className={styles.container}>Hello, World!</div>;
 
 export default hot(module)(App);
