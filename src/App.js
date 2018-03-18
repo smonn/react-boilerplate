@@ -3,8 +3,8 @@ import { css } from 'emotion';
 
 const styles = {
   container: css({
-    padding: '1.5rem'
-  })
+    padding: '1.5rem',
+  }),
 };
 
 export default function App() {
