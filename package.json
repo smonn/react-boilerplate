@@ -6,7 +6,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --mode development --content-base dist --history-api-fallback"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --content-base dist --history-api-fallback",
+    "test": "jest --setupTestFrameworkScriptFile=./testSetup.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -14,11 +16,15 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.2",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.12",
     "webpack-dev-server": "^3.1.1"
   },
   "dependencies": {
+    "emotion": "^9.0.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }
