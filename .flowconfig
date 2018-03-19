@@ -1,4 +1,7 @@
 [ignore]
+<PROJECT_ROOT>/node_modules/webpack-cli/.nyc_output/.*
+node_modules/
+dist/
 
 [include]
 

@@ -10,7 +10,8 @@
     "start": "webpack-dev-server --mode development --hot --content-base dist --history-api-fallback --progress",
     "test": "jest --setupTestFrameworkScriptFile=./setupTests.js",
     "lint": "eslint ./src/ webpack.config.js setupTests.js",
-    "travis": "yarn lint && yarn test"
+    "flow": "flow check",
+    "travis": "yarn lint && yarn flow && yarn test"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
