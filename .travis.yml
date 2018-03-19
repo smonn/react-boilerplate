@@ -5,6 +5,4 @@ node_js:
 
 cache: yarn
 
-script:
-  - yarn lint
-  - yarn test
+script: yarn travis
