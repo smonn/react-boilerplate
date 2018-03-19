@@ -1,5 +1,7 @@
 # React Boilerplate
 
+[![Build Status](https://travis-ci.org/smonn/react-boilerplate.svg?branch=master)](https://travis-ci.org/smonn/react-boilerplate)
+
 Setting up a Webpack, Babel, React project.
 
 Assumptions:
