@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import AboutPage from './components/AboutPage';
 import HomePage from './components/HomePage';
+import NotFoundPage from './components/NotFoundPage';
 import Header from './components/Header';
 
 const styles = {
@@ -23,6 +24,7 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
+        <Route component={NotFoundPage} />
       </Switch>
     </div>
   </div>
