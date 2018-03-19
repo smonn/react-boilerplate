@@ -1,49 +1,14 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
 import { css } from 'emotion';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
-} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import AboutPage from './components/AboutPage';
 import HomePage from './components/HomePage';
+import Header from './components/Header';
 
 const styles = {
-  nav: css({
-    display: 'flex',
-    backgroundColor: '#f8f8f8',
-    borderBottom: '1px solid #f0f0f0',
-    padding: 10,
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    width: '100%',
-  }),
-
-  link: css({
-    color: '#888',
-    fontSize: '0.8rem',
-    fontWeight: 'bold',
-    textTransform: 'uppercase',
-    textDecoration: 'none',
-    transition: 'color 200ms',
-
-    ':hover': {
-      color: '#444',
-    },
-
-    ':not(:first-child)': {
-      marginLeft: 10,
-    },
-
-    '&.active': {
-      color: '#000',
-    },
-  }),
-
+  app: css({}),
   content: css({
     marginTop: 'calc(21px + 1.2rem)',
     padding: 10,
@@ -51,25 +16,16 @@ const styles = {
 };
 
 const App = () => (
-  <Router>
-    <div>
-      <nav className={styles.nav}>
-        <NavLink className={styles.link} exact to="/">
-          Home
-        </NavLink>
-        <NavLink className={styles.link} to="/about">
-          About
-        </NavLink>
-      </nav>
+  <div className={styles.app}>
+    <Header />
 
+    <div className={styles.content}>
       <Switch>
-        <div className={styles.content}>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/about" component={AboutPage} />
-        </div>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/about" component={AboutPage} />
       </Switch>
     </div>
-  </Router>
+  </div>
 );
 
 export default hot(module)(App);
